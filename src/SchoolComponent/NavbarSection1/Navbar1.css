@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.header-wrap1 {
+    border-bottom: 1px solid #fff;
+}
+.header-section {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-section:before,
+.header-section:after{
+    display: table;
+    content: " ";
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.row:before, .row:after {
+    display: table;
+    content: " ";
+}
+.col-xs-12{
+    width: 100%;
+}
+.col-lg-2,.col-md-2,.col-sm-12,.col-xs-12,
+.col-lg-10,.col-md-10{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.head-follow ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.head-follow li {
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+.head-follow li a {
+    text-decoration: none;
+    color: #fff;
+    cursor:pointer;
+    outline:none;
+}
+.head-quick ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.head-quick li {
+    float: left;
+    padding: 10px 17px 10px 17px;
+    cursor: pointer;
+}
+
+@media (min-width: 1170px){
+.section-lg-wrap {
+    width: 80%;
+}
+}
+@media (min-width: 1200px){
+.header-section {
+    width: 1170px;
+}
+}
+@media (min-width: 992px){
+.header-section {
+    width: 970px;
+}
+.col-md-10{
+    width:83.33333333333334%;
+    float:left;
+}
+}
+@media (min-width: 768px){
+.header-section{
+    width: 750px;
+}
+.col-sm-12{
+    width: 100%;
+}
+}

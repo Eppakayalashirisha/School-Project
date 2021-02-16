@@ -1,0 +1,64 @@
+.do-show-mobile {
+    display: none;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    height: 50px;
+    top: auto;
+    z-index:1000;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.do-show-mobile .webalive-post-sharer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.do-show-mobile .webalive-post-sharer>span {
+    margin-right: 10px;
+    padding: 15px;
+    display: none;
+}
+.do-show-mobile ul.post-sharer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.do-show-mobile ul.post-sharer li {
+    max-width: 33.3333%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333%;
+    flex: 0 0 33.333%;
+}
+.do-show-mobile ul.post-sharer li .share-btn {
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.do-show-mobile ul.post-sharer li:first-child .share-btn {
+    background-color: #3b5998;
+}
+.do-show-mobile ul.post-sharer li:nth-child(2) .share-btn {
+    background-color: #1da1f2;
+}
+.do-show-mobile ul.post-sharer li:last-child .share-btn {
+    background-color: #0077b5;
+}
+@media only screen and (max-width: 1024px){
+.do-show-mobile {
+    display: block;
+}
+}

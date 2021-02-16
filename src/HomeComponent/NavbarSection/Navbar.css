@@ -1,0 +1,224 @@
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.siri-navbar  {
+    background:black;
+    margin: 0!important;
+    width: 100%;
+    padding-top: 23px;
+    
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    height: 116px;
+    
+
+}
+.hide{
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+
+}
+.siri-navbar.show {
+    transform: translateX(0);
+
+  }
+  .siri-navbar1  {
+    background:black;
+    margin: 0!important;
+    width: 100%;
+    
+    
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    height: 116px;
+    
+    
+
+}
+
+.mb-5{
+    margin-bottom:3rem!important ;
+}
+.siri-navbar.active {
+    position: fixed;
+    background-color: black;
+    transition:'top 0.6s';
+
+    height:96px;
+    padding-top: 25px;
+
+}
+
+.navcontainer {
+    
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.siri-navbar .navcontainer {
+    max-width: 1630px;
+}
+.siri-menu-wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.siri-navbar-brand {
+    max-width: 200px;
+    color: #fff;
+    cursor:pointer;
+    font-size:2.5rem;
+    font-weight:bold;
+    text-decoration:none;
+    max-width: 200px;
+    filter: brightness(0) invert(1);
+}
+.siri-navbar-brand:hover{
+    text-decoration: none;
+}
+
+.siri-navbar-toggler {
+    display: none;
+}
+.siri-navbar .siri-main-menu {
+    
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    list-style: none;
+}
+.siri-navbar .siri-main-menu li {
+    position: relative;
+    display: inline-block;
+    padding: 20px 25px;
+    margin: 0;
+    z-index: 100;
+}
+.siri-navbar .siri-main-menu li> .menu-links {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid rgba(255,255,255,0);
+    filter: brightness(0) invert(1);
+    transition: border 0.25s ease-out; 
+  -webkit-transition: border 0.25s ease-out; 
+  -moz-transition: border 0.25s ease-out;
+  -o-transition: border 0.25s ease-out;
+}
+.siri-navbar .siri-main-menu li>.menu-links:hover{
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    
+}
+.siri-navbar .in-scroll .siri-main-menu li>.menu-links {
+    color:white;
+}
+.siri-navbar .fa-chevron-down:before, 
+.siri-navbar .fa-chevron-up:before{
+    font-weight: bold;
+    font-size:13px;
+    z-index:10;
+    color:white;
+    padding-left:5px;
+}
+
+
+@media only screen and (max-width: 991px){
+    .siri-navbar {
+        padding-top: 25px;
+        
+        height: 100px;
+    }  
+    .siri-navbar.active{
+        padding-top: 20px;
+    }
+    
+.siri-navbar .navcontainer {
+    padding: 0;
+    transition:all 0.3s ;
+    
+}
+.siri-brand-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 15px;
+    
+}
+.siri-navbar .siri-navbar-brand {
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #fff;
+    max-width: 160px;
+    
+}
+.siri-navbar-toggler {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color:white;
+}
+.siri-navbar-toggler .menu-text {
+    line-height: normal;
+    margin-right: 35px;
+    margin-top: -20px;
+    position: relative;
+}
+.siri-navbar-toggler .menu-text:after {
+    position: absolute;
+    content: "";
+    background:url("https://33t2km132djh3q21qa47elmw-wpengine.netdna-ssl.com/wp-content/themes/webalive/assets/img/menu-bar.png") no-repeat center center;
+    width: 30px;
+    height: 26px;
+    right: -38px;
+}
+.siri-navbar .siri-main-menu{
+    display:none;
+}
+}
+@media (min-width: 992px){
+.navcontainer {
+max-width: 960px;
+}}
+@media (min-width: 768px){
+.navcontainer {
+    max-width: 720px;
+}}
+@media (min-width: 576px){
+.navcontainer {
+    max-width: 540px;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

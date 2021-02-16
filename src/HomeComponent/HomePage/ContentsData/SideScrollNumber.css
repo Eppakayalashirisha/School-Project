@@ -1,0 +1,65 @@
+.webalive-post-sharer-aside {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    position: absolute;
+    top: 40px;
+    transition: all .5s ease-in-out;
+    
+}
+.webalive-post-sharer-aside.affix {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    z-index: 10000;
+}
+ .webalive-post-sharer-aside .webalive-post-sharer {
+    text-align: center;
+}
+.webalive-post-sharer-aside .webalive-post-sharer span.share-title {
+    display: none;
+}
+ .webalive-post-sharer-aside .post-sharer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.webalive-post-sharer-aside .post-sharer .share-btn {
+    display: block;
+    height: 41px;
+    width: 41px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out; 
+    -webkit-transition:all 0.3s ease-in-out;
+}
+.webalive-post-sharer-aside .post-sharer .share-btn:hover{
+    background-color: #f47521;
+    text-decoration: none;
+}
+
+#circ {
+    width: 79px;
+    height: 79px;
+    
+    margin: 60px auto;
+}
+
+
+
+
+@media (max-width: 1024px) and (max-width: 768px){
+.webalive-post-sharer-aside {
+    display: none;
+}
+.webalive-post-sharer-aside .affix {
+    display: none;
+}
+
+}
